@@ -18,6 +18,13 @@ By including this project (jar) through either download or Jitpack plugin you ga
 * [MSMQ COM Interface Library](https://msdn.microsoft.com/en-us/library/windows/desktop/ms704064.aspx) - Provides specific COM references.
 * [Com4j](http://com4j.kohsuke.org/) - Build COM Interfaces for Java bridge.
 
+You also need to ensure that your user is setup with Admin access to the COM Server.  J-Interop allows for dynamic login, which I haven't figured out how to do with Com4j yet.  Until then, make sure you add yourself:
+
+* Start > Component Services
+* Component services > Computers > My Computer
+* Right click > COM Security
+* Add appropriate users with the access required for testing.
+
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management

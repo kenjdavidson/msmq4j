@@ -30,5 +30,6 @@
 		<module>msmq-service</module>
 		<module>msmq4j-com4j</module>
 		<module>msmq4j-interop</module>
+		<module>msmq4j-samples</module>
 	</modules>
 </project>

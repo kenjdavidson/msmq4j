@@ -37,7 +37,7 @@ public interface IMSMQApplication3 extends kjd.microsoft.msmq.mqoa.IMSMQApplicat
   @DISPID(6) //= 0x6. The runtime will prefer the VTID if present
   @VTID(16)
   @ReturnValue(type=NativeType.VARIANT)
-  java.lang.Object[] privateQueues();
+  java.lang.String[] privateQueues();
 
 
   /**

@@ -20,7 +20,7 @@ public interface IMSMQQueue4 extends Com4jObject {
 
   @DISPID(1) //= 0x1. The runtime will prefer the VTID if present
   @VTID(7)
-  int access();
+  MQACCESS access();
 
 
   /**
@@ -35,7 +35,7 @@ public interface IMSMQQueue4 extends Com4jObject {
 
   @DISPID(2) //= 0x2. The runtime will prefer the VTID if present
   @VTID(8)
-  int shareMode();
+  MQSHARE shareMode();
 
 
   /**

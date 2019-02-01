@@ -17,7 +17,8 @@ import com4j.ComException;
 
 /**
  * Perform some integration testing on the {@link IMSMQApplication3} COM Interface.  More detailed
- * examples can be found in the {@code samples} folder. 
+ * examples can be found in the {@code samples} folder.  Ensure that the account you're logged 
+ * into Eclipse with (while running these) has Administrator access on the MSMQ Server.
  * 
  * @author kenjdavidson
  *

@@ -410,7 +410,21 @@ public interface IMSMQQueueInfo4 extends Com4jObject {
 	@Optional java.lang.Object isTransactional,
 	@Optional java.lang.Object isWorldReadable);
 
-
+  /**
+   * <p>
+   * Creates a new queue with the path name set in PathName (required) and the values set by the optional IsWorldReadable (the default is False) and IsTransactional (the default is False) parameters.
+   * </p>
+   */  
+  @DISPID(1610743833) //= 0x60020019. The runtime will prefer the VTID if present
+  @VTID(32)
+  @UseDefaultValues(paramIndexMapping={},
+		  optParamIndex={0,1},
+		  javaType={boolean.class,boolean.class},
+		  nativeType={NativeType.VARIANT,NativeType.VARIANT},
+		  variantType={Variant.Type.VT_BOOL,Variant.Type.VT_BOOL},
+		  literal={"false","false"})
+  void create();
+  
   /**
    * <p>
    * Deletes the queue with the format name set in FormatName or the path name set in PathName.
@@ -439,8 +453,8 @@ public interface IMSMQQueueInfo4 extends Com4jObject {
   @DISPID(1610743835) //= 0x6002001b. The runtime will prefer the VTID if present
   @VTID(34)
   kjd.microsoft.msmq.mqoa.IMSMQQueue4 open(
-    int access,
-    int shareMode);
+    MQACCESS access,
+    MQSHARE shareMode);
 
 
   /**
