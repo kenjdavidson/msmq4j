@@ -8,7 +8,13 @@ import com4j.*;
 public abstract class ClassFactory {
   private ClassFactory() {} // instanciation is not allowed
 
-
+  /**
+   * Provides the properties used to send messages to a/set of Queues
+   */
+  public static kjd.microsoft.msmq.mqoa.IMSMQDestination createMSMQDestination() {
+	  return COM4J.createInstance( kjd.microsoft.msmq.mqoa.IMSMQDestination.class, "{EBA96B18-2168-11D3-898C-00E02C074F6B}");
+  }
+  
   /**
    * Provides a lookup method that is used to locate public queues.
    */
